@@ -275,3 +275,7 @@ func (tpl *Template) ExecuteBlocks(context Context, blocks []string) (map[string
 
 	return result, nil
 }
+
+func (tpl *Template) GetToken() []*Token {
+	return tpl.tokens
+}
